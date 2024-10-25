@@ -1,0 +1,17 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.flex-container{
+    display:flex
+    flex-direction: table-row
+}
+
+main{
+    max-width: 900px;
+    width:100%;
+    margin:0 auto;
+    background-color: #efefef;
+    padding: 2rem;
+
+}
