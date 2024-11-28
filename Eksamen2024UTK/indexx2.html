@@ -1,57 +1,205 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online Shoppen | Forside</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="CSS/style.css" rel="stylesheet" type="text/css">
-</head>
+        <link href="CSS/normalize.css" rel="stylesheet" type="text/css">
+    </head>
 <body>
     <header> 
         <nav class="flex-space-b">
+             <div class="search-container">
+                <input type="search" placeholder="søk her" id="search">
+                <button type="submit" class="skjult-knapp">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
             <ul class="flex-menu">
-                    <li><a href="#">Hjem</a></li>
-                    <li><a href="#">Produkter</a></li>
-                    <img id="main-logo" src="Bilder/Logo onlineshoppen.png" alt="Nettsted logo">
-                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="indexx2.html">Hjem</a></li>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li>
+                        <a href="indexx2.html">
+                          <img id="main-logo" src="Bilder/Logo_onlineshoppen.png" alt="Nettsted logo">
+                        </a>    
+                    </li>
+                    <li><a href="#popular-categories">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
             </ul>
-            <form>
-                <label for="search">Søk</label>
-                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                <input type="submit" value="søk">
-            </form>
+         <nav class="iconer">
+                <span class="profile-icon"><i class="fa-regular fa-user"></i></span>
+                <span class="favorite-icon"><i class="fa-regular fa-heart"></i></span>
+                <a href="checkout.html"><span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></a>
+            </nav>
         </nav>
     </header>
- <main>
-            <h2 id="Våre mest populære produkter">Våre mest populære produkter</h2>
-            <section>
-                <h2>Våre beste deals</h2>
-                <a href="#">Shop nå -></a>
-                <img src="img/powerup.webp" alt="Våre beste deals">
+
+   <main>
+      <section class="big-image-box">
+        <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+            id quod maxime placeat facere possimus.</p>
+        <button class="test-it-out-button" type="button" onclick="location.href='#';">FÅ EN PRØVE PAKKE I DAG</button>
+      </section>
+
+     <section id="popular-products">
+        <h2 class="popular-title">Våre mest populære produkter</h2>
+        <p>Oppdag det beste av det beste</p>
+    <div class="button-container">
+        <button class="new-product">New<br>Product</button>
+        <button class="special-price">Special<br>Price</button>
+        <button class="best-sellers">Best<br>Sellers</button>
+    </div>    
+
+
+        <section class="products-list">
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+            <article class="product-card">
+                    <img src="Bilder/buyer2.png" alt="product-name" class="product-image">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">1999 kr</p>
+                </article>
+               </section>
             </section>
-            <section class="flex-space-b">
-                <h2>Produkter</h2>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
-                    <a href="#">adidas Originals</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299 kr</p>
+
+
+
+        <section id="popular-categories">
+            <h2 class="popular-title">Våre mest populære kategorier</h2>
+            <p>Oppdag det beste av det beste</p>
+            <section class="category-list">
+                <article class="category-card">
+                 <h3>Category 1</h3>
                 </article>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
-                    <a href="#">adidas Originals</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299 kr</p>
+                <article class="category-card">
+                        <h3>Category 2</h3>
                 </article>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
-                    <a href="#">adidas Originals</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299 kr</p>
+                <article class="category-card">
+                        <h3>Category 3</h3>
+                </article>
+                <article class="category-card">
+                        <h3>Category 4</h3>
+                </article>
+                <article class="category-card">
+                        <h3>Category 5</h3>
                 </article>
             </section>
-        </main>
-        <footer>Zalando Light 2024</footer>
+
+        <section id="reviews">
+            <h2 class="review-title">Anmeldelser</h2>
+
+            <article class="review-card">
+                <img src="Bilder/dog.png" alt="kunde1" class="reviewer-image">
+                  <h3>Rober Labrador</h3>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla eleifend sapien vitae ipsum ullamcorper pulvinar. 
+                    Sed vehicula auctor ligula, in venenatis sem sodales id. 
+                    Proin semper erat risus, vitae mollis ex sollicitudin at. 
+                    Sed tempor efficitur imperdiet. 
+                    Fusce urna metus, feugiat cursus dolor nec, ultricies dictum velit. 
+                    Cras condimentum nisl quis dapibus hendrerit.<p/>
+            </article>
+            
+            <article class= "review-card">
+                <img src="Bilder/dog.png" alt="kunde2" class="reviewer-image">
+                  <h3>Rober Labrador</h3>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla eleifend sapien vitae ipsum ullamcorper pulvinar. 
+                    Sed vehicula auctor ligula, in venenatis sem sodales id. 
+                    Proin semper erat risus, vitae mollis ex sollicitudin at. 
+                    Sed tempor efficitur imperdiet. 
+                    Fusce urna metus, feugiat cursus dolor nec, ultricies dictum velit. 
+                    Cras condimentum nisl quis dapibus hendrerit.</p>
+            </article>
+
+
+            <article class= "review-card">
+                <img src="Bilder/dog.png" alt="kunde3" class="reviewer-image">
+                <h3>Rober Labrador</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla eleifend sapien vitae ipsum ullamcorper pulvinar. 
+                        Sed vehicula auctor ligula, in venenatis sem sodales id. 
+                        Proin semper erat risus, vitae mollis ex sollicitudin at. 
+                        Sed tempor efficitur imperdiet. 
+                        Fusce urna metus, feugiat cursus dolor nec, ultricies dictum velit. 
+                        Cras condimentum nisl quis dapibus hendrerit.</p>
+            </article>
+
+
+            <article class= "review-card">
+                <img src="Bilder/dog.png" alt="kunde4" class="reviewer-image">
+                <h3>Rober Labrador</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla eleifend sapien vitae ipsum ullamcorper pulvinar. 
+                        Sed vehicula auctor ligula, in venenatis sem sodales id. 
+                        Proin semper erat risus, vitae mollis ex sollicitudin at. 
+                        Sed tempor efficitur imperdiet. 
+                        Fusce urna metus, feugiat cursus dolor nec, ultricies dictum velit. 
+                        Cras condimentum nisl quis dapibus hendrerit.</p>
+            </article>        
+                    
+        </section>        
+    </main>
+
+     <footer>
+         <img src="Bilder/Logo_onlineshoppen.png" alt="Logo" class="footer-logo" />
+         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+
+         <h3>KONTAKT</h3>
+         <p class="kontakt-oss"><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong>  B R A Veien 4, 1782 Halden</p>
+         <p class="kontakt-oss"><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 60 80 00</p>
+         <p class="kontakt-oss"><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no</p>
+         <p class="kontakt-oss"><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00</p>
+
+        <h3>SNARVEIER</h3>
+         <ul class="snarveier" >
+           <li><a href="#popular-products">Produkter</a></li>
+           <li><a href="#popular-categories">Kategorier</a></li>
+           <li><a href="#KONTAKT">Kontakt oss</a></li>
+         </ul>  
+
+
+        <h3>SOSIALE MEDIER</h3>
+        <p class="sosiale-medier">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.pinterest.com/"target="_blank"><i class="fa-brands fa-pinterest"></i>      
+        </p>        
+</footer>
     </body>
 </html>
