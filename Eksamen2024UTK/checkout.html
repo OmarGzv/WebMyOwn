@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Online Shoppen | Forside</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="CSS/style.css" rel="stylesheet" type="text/css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shoppen | Forside</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+</head>
 <body>
     <header> 
         <nav class="flex-space-b">
@@ -37,20 +37,122 @@
             </nav>
         </nav>
     </header>
-    <main class="checkout-page">
-        <h2>Kasse</h2>
+
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="/indexx2.html">Hjem</a> &gt;</li>
+            <li><a href="/popular-categories">Kategori</a> &gt;</li>
+            <li><span>Produkt</span></li>
+        </ul>
+    </nav>
+   
+<main>
+    <section class="checkout-page">
+        <h2 class="kasse">Kasse</h2>
         <section class="shopping-bag">
-             <h3>1. SHOPPINGBAGGEN DIN</h3>
-             <img src="https://picsum.photos/500/300" alt="Produktbilde" class="product-image" />
-             
+            <h3>1. SHOPPINGBAGGEN DIN</h3>
+            <a href="product.html" class="product">
+                <article>
+                    <img src="https://picsum.photos/200/200" alt="Produkt1">
+                    <h3>Produkt navn</h3>
+                    <p>Kr 1999</p>
+                    <p><strong>Farge:</strong> beige</p>
+                </article>
+            </a>
+            <a href="product.html" class="product">
+                <article>
+                    <img src="https://picsum.photos/500/600" alt="Produkt2">
+                    <h3>Produkt navn</h3>
+                    <p>Kr 1999</p>
+                    <p><strong>Farge:</strong> beige</p>
+                </article>
+            </a>
+            <a href="product.html" class="product">
+                <article>
+                    <img src="https://picsum.photos/200/200" alt="Produkt3">
+                    <h3>Produkt navn</h3>
+                    <p>Kr 1999</p>
+                    <p><strong>Farge:</strong> beige</p>
+                </article>
+            </a>
+    </section>
+  </section>    
 
 
+
+<!--Seksjon 2 opplysninger-->
+    <section class="personal-info">
+          <h2>2. DINE OPPLYSNINGER</h2>
+          <h3>Leveringsadresse</h3>
+        <form class="personal-info-form">
+                <input type="text" placeholder="Fornavn*" required /><br />
+                <input type="text" placeholder="Etternavn*" required /><br />
+                <input type="text" placeholder="Gateaddresse*" required /><br />
+                <input type="text" placeholder="Postnummer*" required /><br />
+                <input type="text" placeholder="Poststed*" required /><br />
+            <div class="button-group">
+                    <button type="submit">Lagre</button>
+                    <button type="button">Avbryt</button>
+            </div>
+        </form>  
+    </section>
+
+<!--3.levering-->    
+    <section class="delivery">
+        <h2>3. LEVERING</h2>
+        <h4>LEVERINGSVALG</h4>
+        <div class="radio-group">
+        <label>
+            <input type="radio" name="levering" value="express">
+            <span>Ekspress Hjemlevering</span>
+        </label>
+        <label>
+            <input type="radio" name="levering" value="ekspress">
+            <span>Ekspress Pakke til utleveringssted</span>
+        </label>
+        <label>
+            <input type="radio" name="levering" value="standard">
+            <span>Standard Hjemlevering</span>
+        </label>
+        </div>
+    </section>
+
+<!--Seksjon 4 Betaling-->
+        <section class="payment-info">
+            <h2>4. Betaling</h2>
+            <h3>BETAL MED KORT</h3>
+            <section class="form-group">
+                <label for="kortnummer">Kortnummer</label>
+                <input type="text" id="kortnummer" placeholder="342342****4435*">
+                <label for="utlopsdato">Utløpsdato</label>
+                <input type="date" id="utlopsdato" required>
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" placeholder="CVC/CVV" required>
+            </section>    
+        <section class="form-group">
+                <p>Å betale inkl. mva.</p>
+                <p>1 199kr</p>
+                <button type="button">Fullfør kjøp</button>
+        </section>   
+        
+<!--Orderbekreftelse -->        
+        <section class="form-group-order-confirmation">   
+
+            <p class="info">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+                Leverandøren forbeholder seg retten til å 
+                heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
+            <section class="checkbox-group">
+                <input type="checkbox" id="nyhetsbrev">
+                <label for="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label>
+                <input type="checkbox" id="tekstmeldinger">
+                <label for="tekstmeldinger">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+            </section>
         </section>
-
-
-
+    </section>    
+</main>    
+   
     <footer>
-        <img src="Bilder/Logo_onlineshoppen.png" alt="Logo" class="footer-logo" />
+        <img src="Bilder/Logo_onlineshoppen.png" alt="Logo" class="footer-logo"/>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
 
         <h3>KONTAKT</h3>
@@ -69,11 +171,11 @@
 
        <h3>SOSIALE MEDIER</h3>
        <p class="sosiale-medier">
-           <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
-           <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>
-           <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>
-           <a href="https://www.pinterest.com/"target="_blank"><i class="fa-brands fa-pinterest"></i>      
-       </p>        
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        </p>        
 </footer>
 </body>
 </html>

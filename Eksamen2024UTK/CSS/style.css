@@ -1,3 +1,7 @@
+
+
+@import url('normalize.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +16,48 @@ body {
 
 }
 
+.form-container {
+    display: grid;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-group .info {
+    font-size: 12px;
+    color: #555;
+}
+.form-group .checkbox-group {
+    margin-top: 10px;
+}
+.form-group .checkbox-group input {
+    margin-right: 5px;
+}
+
+
+
 
 .flex-space-b {
     display:flex;
@@ -21,6 +67,21 @@ body {
     justify-content: flex-start;
     gap: 20px;
 }
+
+.skjult-knapp {
+  display: inherit;
+  background-color: #e0e0e0;
+  color: rgb(15, 15, 15);
+  padding: 5px 10px;
+  border: black;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin: -5px;
+  text-align: center;
+
+}  
 
 nav{
     text-align: right;
@@ -59,9 +120,211 @@ p{
 
 form {
     margin-right: 20px;
-    display: flex;
+    display: grid;
     align-items: center;
 }
+
+.personal-info-form {
+    max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+.personal-info h2  {
+     text-align: start;
+     margin: 10px;  
+
+}
+
+.personal-info h3 {
+     text-align: start;
+     margin: 10px;  
+
+}
+
+
+.personal-info-form input {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.personal-info-form .button-group {
+    display: grid;
+  justify-content: flex-start;
+  margin-top: 15px;
+
+}
+
+.personal-info-form .button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.personal-info-form .button-group button[type="submit"] {
+    background-color: #000000;
+    color: white;
+}
+
+.personal-info-form .button-group button[type="button"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+.personal-info-form .button-group button:hover {
+    opacity: 0.8;
+}
+
+.delivery {
+    margin-top: 20px;
+  display: grid;
+  padding: 0 15px;
+}
+.delivery h2 {
+    text-align: start;
+     margin: 10px; 
+}
+
+.delivery h4 {
+     text-align: start;
+     margin: 10px; 
+
+
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 15px;
+    max-width: fit-content;
+}
+
+.radio-group label span {
+    margin-right: 10px;
+}
+
+
+.form-container {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group h2 {
+    text-align: start;
+    margin: 10px;
+}
+
+.form-group h4 {
+    text-align: start;
+    padding: 10px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-group .info {
+    font-size: 12px;
+    color: #555;
+}
+.checkbox-group {
+    margin-top: 0px;
+  display: grid;
+  padding: 50px 20px;
+  gap: 0px;
+}
+    
+
+.checkbox-group input {
+    margin: 0px 0px;
+  padding: -5px 0px;
+  max-width: fit-content;
+    
+}
+
+
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;  
+
+} 
+
+.breadcrumb ul {
+     list-style: none;  
+     display: flex;
+     gap: 0.5rem;
+     padding: 0;
+     margin: 0;
+     font-size: 0.9rem;
+
+
+}
+
+.breadcrumb a {
+     text-decoration: none;  
+     color: #000;  
+     margin-right: 10px;
+     margin: 0 5px;  
+     font-size: 14px;  
+     font-weight: 500;  
+     transition: color 0.3s ease;  
+
+} 
+
+.breadcrumb span {
+    margin: 0 5px;
+}
+
+.breadcrumb a,.breadcrumb span {
+    display: inline;
+}
+
+.breadcrumb li:not(:last-child)::after {
+     margin: 0 0.5rem;
+
+
+}
+
+
+    
+
+
 
 .search-container {
     position: relative;
@@ -90,18 +353,7 @@ form {
     margin-right: 10px;
 }
 
-.search-button {
-    background: #fff;
-    border: 1px solid #ccc; 
-    border-left: none;
-    cursor: pointer;
-    color: #2341ec;
-    padding: 20px;
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .iconer {
     display: flex;

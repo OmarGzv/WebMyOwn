@@ -1,5 +1,5 @@
 @import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -10,6 +10,7 @@ body{
 
 
 }
+
 
 header, nav, footer{
     width: 100%;
@@ -33,7 +34,7 @@ header{
 }
 
 nav{
-    background-color: rgb(204, 50, 176);
+    background-color: rgb(192, 187, 191);
 
 }
 
@@ -51,12 +52,16 @@ nav ul {
 main {
     display: flex;
     flex-wrap: wrap;
-    background-color: forestgreen;
+    background-color: rgb(136, 75, 75);
     width: 70%;
     min-width: 500px;
     justify-content: space-between;
 }
 
+h4.aside a {
+    color: blue;
+}
+ 
 
 footer {
       width: 100%;
